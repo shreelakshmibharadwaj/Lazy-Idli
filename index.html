@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayArena Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="logo"><img width="50" height="50" src="https://img.icons8.com/stickers/50/sport.png" alt="sport"/></a>
+      
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#events" class="btn-hover">Events</a></li>
+        <li><a href="#contact" class="btn-hover">Contact</a></li>
+        <li><a href="#book-now" class="btn-hover book-now">Book Now</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+
+  
+    <!-- Learn More Section with Video Background -->
+<section id="learn-more" class="learn-more">
+    <div class="overlay">
+      <div class="container">
+        <h2>Learn More</h2>
+        <p>Discover more about the services and events at PlayArena.</p>
+        <a href="#about" class="btn-hover">Explore</a>
+      </div>
+    </div>
+    <!-- Video Background -->
+    <video autoplay loop muted class="video-background">
+      <source src="assets\video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>PlayArena offers a diverse range of activities, events, and sports facilities to keep you engaged and entertained.</p>
+      <div class="cards">
+        <!-- Sports Card -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-basketball-ball"></i>
+          </div>
+          <h3>Sports</h3>
+          <p>Engage in various sports activities.</p>
+        </div>
+        <!-- Events Card -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h3>Events</h3>
+          <p>Host or attend exciting events.</p>
+        </div>
+        <!-- Community Card -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Community</h3>
+          <p>Connect with like-minded people.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+<!-- Events Section -->
+<section id="events" class="events">
+  <div class="container">
+      <h2>Upcoming Events</h2>
+      <div class="event-details">
+          <div class="event-card">
+              <h3>Basketball Championship</h3>
+              <p><strong>Date:</strong> 25th February 2025</p>
+              <p><strong>Location:</strong> Arena Stadium</p>
+              <p>Join us for the annual Basketball Championship, where top teams compete for the grand prize!</p>
+          </div>
+          <div class="event-card">
+              <h3>Football League</h3>
+              <p><strong>Date:</strong> 15th March 2025</p>
+              <p><strong>Location:</strong> Arena Park</p>
+              <p>Exciting football matches featuring the best local teams. Don't miss the action!</p>
+          </div>
+          <div class="event-card">
+              <h3>Music Festival</h3>
+              <p><strong>Date:</strong> 30th March 2025</p>
+              <p><strong>Location:</strong> City Concert Hall</p>
+              <p>Experience live performances from your favorite artists in a night of music, dance, and fun!</p>
+          </div>
+          <div class="event-card">
+              <h3>Art Exhibition</h3>
+              <p><strong>Date:</strong> 10th April 2025</p>
+              <p><strong>Location:</strong> Downtown Art Gallery</p>
+              <p>Discover stunning artworks by talented local and international artists.</p>
+          </div>
+          <div class="event-card">
+              <h3>Charity Run</h3>
+              <p><strong>Date:</strong> 20th April 2025</p>
+              <p><strong>Location:</strong> Riverside Park</p>
+              <p>Run for a cause and help raise funds for local charities while staying active and having fun!</p>
+          </div>
+          <div class="event-card">
+              <h3>Food Festival</h3>
+              <p><strong>Date:</strong> 5th May 2025</p>
+              <p><strong>Location:</strong> Central Plaza</p>
+              <p>Savor delicious dishes from around the world at our vibrant food festival.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <!-- Book Now Section -->
+<section id="book-now" class="book-now">
+    <div class="container">
+      <h2>Book Your Event Now</h2>
+      <p>Fill out the form below to book your spot for the next exciting event at PlayArena!</p>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="event">Select Event:</label>
+          <select id="event" name="event" required>
+            <option value="basketball">Basketball Championship</option>
+            <option value="football">Football League</option>
+            <option value="music">Music Festival</option>
+            <option value="art">Art Exhibition</option>
+            <option value="charity">Charity Run</option>
+            <option value="food">Food Festival</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-submit">Book Now</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>For inquiries, please reach us through the following channels:</p>
+      <ul>
+        <li><strong>Email:</strong> info@playarena.com</li>
+        <li><strong>Phone:</strong> +91 99XXXXXXXX</li>
+        <li><strong>Address:</strong> #13, Near Arena Palace, Banglore-5600XX</li>
+      </ul>
+  
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="https://www.youtube.com" target="_blank" class="social-icon youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://wa.me/1234567890" target="_blank" class="social-icon whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 PlayArena Clone. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

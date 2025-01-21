@@ -1,0 +1,937 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #9c7c1b;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .cta-btn {
+    padding: 10px 20px;
+    background: #f04;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('assets/images/hero-bg.jpg') no-repeat center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-btn {
+    padding: 10px 20px;
+    background: #f04;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 50px 0;
+    background: #f4f4f4;
+  }
+  
+  .about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* About Section Logos */
+.card-logo {
+    font-size: 60px; 
+    color: #f04; 
+    margin: 0 auto 10px;
+    display: block;
+  }
+  
+  /* Card Container */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Cards */
+.card {
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    width: 300px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #7d7784, #c7d7c7);
+  }
+  
+  /* Card Logo Icons */
+  .card-logo {
+    font-size: 60px; 
+    color: rgba(106, 17, 203, 0.8); 
+    margin: 0 auto 10px;
+    display: block;
+    transition: color 0.4s ease; 
+  }
+  
+  .card:hover .card-logo {
+    color: #fff; 
+    transform: scale(1.2); 
+  }
+  
+  /* Card Text */
+  .card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333; /* Default text color */
+    transition: color 0.4s ease;
+  }
+  
+  .card:hover h3 {
+    color: #fff; /* Change text color to white on hover */
+  }
+  
+  .card p {
+    color: #666; /* Default paragraph color */
+    transition: color 0.4s ease;
+  }
+  
+  .card:hover p {
+    color: #fff; /* Change paragraph color to white on hover */
+  }
+  
+  /* About Section */
+.about {
+    padding: 50px 0;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Card */
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 300px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #d3d8e1;
+  }
+  
+  .card-icon {
+    font-size: 50px;
+    color: #2575fc;
+    margin-bottom: 20px;
+    transition: color 0.4s ease, transform 0.4s ease;
+  }
+  
+  .card:hover .card-icon {
+    color: #161517;
+    transform: scale(1.2);
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+    transition: color 0.4s ease;
+  }
+  
+  .card:hover h3 {
+    color: #2575fc;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    transition: color 0.4s ease;
+  }
+  
+  .card:hover p {
+    color: #444;
+  }
+  
+
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Section */
+  .header {
+    background: #484a4f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  /* Navigation */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #2575fc; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    transform: translateY(-5px);
+  }
+  
+  /* Hover Effect Overlay */
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 30px;
+  }
+  
+  .nav-links a:hover::after {
+    opacity: 1; 
+  }
+  
+  /* About Section */
+  .about {
+    padding: 50px 0;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Card */
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 300px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #2575fc;
+  }
+  
+  .card-icon {
+    font-size: 50px;
+    color: #2575fc;
+    margin-bottom: 20px;
+    transition: color 0.4s ease, transform 0.4s ease;
+  }
+  
+  .card:hover .card-icon {
+    color: #6a11cb;
+    transform: scale(1.2);
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+    transition: color 0.4s ease;
+  }
+  
+  .card:hover h3 {
+    color: #2575fc;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    transition: color 0.4s ease;
+  }
+  
+  .card:hover p {
+    color: #444;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+      padding: 8px 20px;
+    }
+  
+    .cards {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 90%;
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .nav-links a {
+      font-size: 0.9rem;
+      padding: 6px 15px;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: #000; /* Black Background */
+    color: #fff; /* White text */
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  
+  .contact li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .contact a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    color: #f39c12; 
+  }
+  
+  /* Social Media Icons */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #f39c12; 
+    transform: translateY(-5px); 
+  }
+  
+  .social-icon.youtube:hover {
+    color: #ff0000; /* YouTube Red */
+  }
+  
+  .social-icon.instagram:hover {
+    color: #e1306c; /* Instagram Pink */
+  }
+  
+  .social-icon.facebook:hover {
+    color: #1877f2; /* Facebook Blue */
+  }
+  
+  .social-icon.whatsapp:hover {
+    color: #25d366; /* WhatsApp Green */
+  }
+  
+   
+  
+  /* Smooth Scroll for Button Hover */
+  .nav-links a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #2575fc;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-5px);
+  }
+  
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Events Section */
+.events {
+    padding: 50px 0;
+    background: #fafafa;
+    text-align: center;
+  }
+  
+  .events h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .event-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .event-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 300px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    text-align: center;
+  }
+  
+  .event-card h3 {
+    font-size: 1.8rem;
+    color: #2575fc;
+    margin-bottom: 15px;
+  }
+  
+  .event-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #2575fc;
+  }
+  
+  .event-card p strong {
+    color: #2575fc;
+  }
+  
+  /* Smooth Scroll for Button Hover */
+  .nav-links a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #2575fc;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-5px);
+  }
+  
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Book Now Section */
+.book-now {
+    padding: 50px 0;
+    background: #f8f8f8;
+    text-align: center;
+  }
+  
+  .book-now h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .book-now p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .book-now form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-now .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .book-now label {
+    font-size: 1.1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .book-now input, .book-now select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .book-now button {
+    background-color: #ff4747;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-now button:hover {
+    background-color: #e24343;
+  }
+  
+  .book-now button:focus {
+    outline: none;
+  }
+  
+  /* Smooth Scroll for Button Hover */
+  .nav-links a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #2575fc;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-5px);
+  }
+  
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Styling the Book Now button in the Navbar */
+.nav-links a.book-now {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 30px;
+    background-color: #ff4747; /* Red Color */
+    border: 2px solid #ff4747; 
+    border-radius: 30px;
+    transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+  }
+  
+  .nav-links a.book-now:hover {
+    color: #fff;
+    background-color: #e24343; 
+    border-color: #e24343; 
+    transform: translateY(-5px);
+  }
+  
+  .nav-links a.book-now:focus {
+    outline: none;
+  }
+  
+  /* Smooth Scroll for Button Hover */
+  .nav-links a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #2575fc;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-5px);
+  }
+  
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Learn More Section */
+.learn-more {
+    position: relative;
+    height: 100vh; 
+    overflow: hidden; 
+  }
+  
+  .learn-more .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+  }
+  
+  .learn-more .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1; 
+  }
+  
+  .learn-more h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .learn-more .btn-hover {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #ff4747;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .learn-more .btn-hover:hover {
+    background-color: #e24343;
+    transform: translateY(-5px); 
+  }
+  
+  /* Logo Styles */
+.logo {
+  display: inline-block;
+  margin-left: 20px; 
+}
+
+.logo img {
+  vertical-align: middle; 
+}
+
+/* For Tablets (768px and below) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .learn-more h2 {
+    font-size: 2.5rem;
+  }
+
+  .learn-more p {
+    font-size: 1rem;
+  }
+
+  .learn-more .btn-hover {
+    font-size: 1.2rem;
+    padding: 8px 20px;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: 1rem;
+  }
+
+  .contact ul li {
+    font-size: 1rem;
+  }
+
+  .contact .social-icon {
+    font-size: 1.8rem;
+  }
+}
+
+/* For Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .learn-more h2 {
+    font-size: 2rem;
+  }
+
+  .learn-more p {
+    font-size: 0.9rem;
+  }
+
+  .learn-more .btn-hover {
+    font-size: 1rem;
+    padding: 6px 15px;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact ul li {
+    font-size: 0.9rem;
+  }
+
+  .contact .social-icon {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
